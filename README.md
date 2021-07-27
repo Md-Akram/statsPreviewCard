@@ -1,15 +1,12 @@
 ## Table of contents
 
-- [Overview](#overview)
 
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
   - [Links](#links)
-
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
 
-## Overview
 
 ### The challenge
 
@@ -19,12 +16,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](images\Screenshot_1.png)
+![](http://prnt.sc/1glimtw)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+
+- Live Site URL: (https://md-akram.github.io/statsPreviewCard/)
 
 ### Built with
 

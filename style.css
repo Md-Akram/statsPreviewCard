@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+:root {
+  --veryDarkBlue: hsl(233, 47%, 7%);
+  --darkBlue: hsl(244, 38%, 16%);
+  --softViolet: hsl(277, 64%, 61%);
+  --white: hsl(0, 0%, 100%);
+  --slightlyTransparentWhite: hsla(0, 0%, 100%, 0.75);
+  --moreTransparentWhite: hsla(0, 0%, 100%, 0.6);
+}
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+.dark-blue {
+  background: var(--veryDarkBlue);
+  width: 100%;
+  height: auto;
+  padding: 50px 0;
+}
+
+.card {
+  background: var(--darkBlue);
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 10px;
+  margin-bottom: 5px;
+}
+
+.card-img img {
+  max-width: 100%;
+  height: 100%;
+  border-radius: 10px 10px 0 0;
+}
+.card-img {
+  position: relative;
+}
+.card-img::before {
+  content: '';
+  position: absolute;
+  display: block;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 3px;
+  width: 100%;
+
+  border-radius: 10px 10px 0 0;
+  z-index: 2;
+  background: hsla(277, 64%, 61%, 0.5);
+}
+
+.card-description {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-bottom: 5px;
+}
+
+h3,
+h2 {
+  color: var(--white);
+}
+.main-p {
+  color: var(--slightlyTransparentWhite);
+}
+ul > li > p {
+  color: var(--moreTransparentWhite);
+  text-transform: capitalize;
+}
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.soft-violet {
+  color: var(--softViolet);
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: hsl(228, 18%, 57%);
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 750px) {
+  .dark-blue {
+    height: 100vh;
+  }
+  .card {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 80%;
+    margin: 20px auto;
+  }
+
+  .card-img img {
+    border-radius: 0 10px 10px 0;
+  }
+
+  .card-img::before {
+    bottom: 0;
+    border-radius: 0 10px 10px 0;
+  }
+
+  .card-description {
+    padding: 20px;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    gap: 1;
+  }
+}
